@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="549.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java__project.Controller">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="443.0" fitWidth="828.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@payroll.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="39.0" layoutY="454.0" text="Username">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="489.0" text="Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="124.0" layoutY="450.0" />
+      <PasswordField fx:id="password" layoutX="124.0" layoutY="485.0" />
+      <Button layoutX="294.0" layoutY="485.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="57.0" text="Log IN">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="12.0" />
+         </font></Button>
+      <Label fx:id="giris" layoutX="39.0" layoutY="511.0" prefHeight="26.0" prefWidth="255.0" text=" " />
+   </children>
+</AnchorPane>

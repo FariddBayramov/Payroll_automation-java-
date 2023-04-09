@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="431.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java__project.Controller">
+   <children>
+      <Label layoutX="39.0" layoutY="90.0" text="ID">
+         <font>
+            <Font name="Bodoni MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="25.0" text="Search ">
+         <font>
+            <Font name="Bodoni MT Black" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="125.0" text="Name">
+         <font>
+            <Font name="Bodoni MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="160.0" text="Surname">
+         <font>
+            <Font name="Bodoni MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="195.0" text="Gender">
+         <font>
+            <Font name="Bodoni MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="230.0" text="Date of Birth">
+         <font>
+            <Font name="Bodoni MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="295.0" text="Department">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="336.0" text="Basic Salary">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#back2" prefHeight="26.0" prefWidth="73.0" text="Back">
+         <font>
+            <Font name="Book Antiqua Bold" size="13.0" />
+         </font></Button>
+      <TextField fx:id="search" layoutX="288.0" layoutY="28.0" />
+      <Button layoutX="443.0" layoutY="29.0" mnemonicParsing="false" onAction="#searchf" prefHeight="20.0" prefWidth="52.0" text="search">
+         <tooltip><Tooltip text="Search employee" /></tooltip>
+         <font>
+            <Font name="Californian FB" size="12.0" />
+         </font></Button>
+      <TextField fx:id="id1" disable="true" layoutX="160.0" layoutY="91.0" />
+      <TextField fx:id="name1" disable="true" layoutX="160.0" layoutY="125.0" />
+      <TextField fx:id="surname1" disable="true" layoutX="160.0" layoutY="161.0" />
+      <TextField fx:id="gender1" disable="true" layoutX="160.0" layoutY="196.0" />
+      <TextField fx:id="date1" disable="true" layoutX="160.0" layoutY="231.0" />
+      <TextField fx:id="department1" disable="true" layoutX="160.0" layoutY="293.0" />
+      <TextField fx:id="salary1" disable="true" layoutX="160.0" layoutY="334.0" />
+      <Label layoutX="395.0" layoutY="94.0" text="Overtime" textFill="#84343d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="129.0" text="Medical" textFill="#84343d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="165.0" text="Bonus" textFill="#84343d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="199.0" text="Other" textFill="#84343d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="629.0" layoutY="93.0" text="Rate per hour" textFill="#84343d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="overtime" layoutX="452.0" layoutY="91.0" />
+      <TextField fx:id="medical" layoutX="452.0" layoutY="125.0" />
+      <TextField fx:id="bonus" layoutX="452.0" layoutY="160.0" />
+      <TextField fx:id="other" layoutX="452.0" layoutY="196.0" />
+      <TextField fx:id="rateperhour" layoutX="719.0" layoutY="90.0" />
+      <Button layoutX="395.0" layoutY="334.0" mnemonicParsing="false" onAction="#calculate" text="Calculate">
+         <tooltip><Tooltip text="Calculate total amount" /></tooltip>
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Button>
+      <Button layoutX="395.0" layoutY="293.0" mnemonicParsing="false" onAction="#save" text="Save">
+         <tooltip><Tooltip text="Save employee's amount" /></tooltip>
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Button>
+      <Label layoutX="602.0" layoutY="302.0" text="Total Amount:">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="totalamount" disable="true" layoutX="719.0" layoutY="302.0" />
+      <Label layoutX="226.0" layoutY="33.0" prefHeight="18.0" prefWidth="50.0" text="(with ID)" textFill="#00000093">
+         <font>
+            <Font name="Calibri Light Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="637.0" layoutY="125.0" mnemonicParsing="false" onAction="#info2" prefHeight="26.0" prefWidth="65.0" text="Info">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
